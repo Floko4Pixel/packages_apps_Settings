@@ -21,6 +21,7 @@ LOCAL_USE_AAPT2 := true
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_SRC_FILES += $(call all-java-files-under, ../crDroidSettings/src)
+LOCAL_SRC_FILES += $(call all-java-files-under, ../../../external/google/settings/src)
 LOCAL_ASSET_DIR := packages/apps/crDroidSettings/assets
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
@@ -62,7 +63,8 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res \
     frameworks/support/v7/cardview/res \
-    packages/apps/crDroidSettings/res
+    packages/apps/crDroidSettings/res \
+    external/google/settings/res
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
